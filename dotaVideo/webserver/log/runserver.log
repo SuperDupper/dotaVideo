@@ -1,0 +1,139 @@
+nohup: 忽略输入
+/usr/local/lib/python2.7/site-packages/setuptools-2.2-py2.7.egg/pkg_resources.py:991: UserWarning: /home/wenquan/.python-eggs is writable by group/others and vulnerable to attack when used with get_resource_filename. Consider a more secure location (set with .set_extraction_path or the PYTHON_EGG_CACHE environment variable).
+
+/usr/local/lib/python2.7/site-packages/setuptools-2.2-py2.7.egg/pkg_resources.py:991: UserWarning: /home/wenquan/.python-eggs is writable by group/others and vulnerable to attack when used with get_resource_filename. Consider a more secure location (set with .set_extraction_path or the PYTHON_EGG_CACHE environment variable).
+
+[27/Feb/2014 16:50:39] "GET / HTTP/1.1" 200 5095
+[27/Feb/2014 16:50:43] "GET /users/ HTTP/1.1" 200 4829
+[27/Feb/2014 16:50:48] "GET /videoauthors/ HTTP/1.1" 200 4926
+[27/Feb/2014 16:50:53] "GET /videos/ HTTP/1.1" 200 4842
+[27/Feb/2014 16:55:33] "GET /videos/ HTTP/1.1" 200 4842
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/js/jquery-1.8.1-min.js HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[27/Feb/2014 16:55:33] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[27/Feb/2014 17:03:44] "GET / HTTP/1.1" 200 5095
+[27/Feb/2014 17:03:45] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[27/Feb/2014 17:03:52] "GET /videoauthors/ HTTP/1.1" 200 4926
+[27/Feb/2014 17:04:01] "GET /videos/ HTTP/1.1" 200 4842
+[27/Feb/2014 17:06:47] "GET / HTTP/1.1" 200 5095
+[27/Feb/2014 17:06:49] "GET /videoauthors/ HTTP/1.1" 200 4926
+[27/Feb/2014 17:06:53] "GET /groups/ HTTP/1.1" 200 4842
+[27/Feb/2014 17:06:57] "GET /videos/ HTTP/1.1" 200 4842
+[27/Feb/2014 17:07:02] "GET /videos/?format=json HTTP/1.1" 200 59
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 268, in send_headers
+    self.send_preamble()
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 189, in send_preamble
+    self._write('HTTP/%s %s\r\n' % (self.http_version,self.status))
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 389, in _write
+    self.stdout.write(data)
+  File "/usr/local/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/local/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/local/lib/python2.7/SocketServer.py", line 641, in __init__
+    self.finish()
+  File "/usr/local/lib/python2.7/SocketServer.py", line 694, in finish
+    self.wfile.flush()
+  File "/usr/local/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 268, in send_headers
+    self.send_preamble()
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 189, in send_preamble
+    self._write('HTTP/%s %s\r\n' % (self.http_version,self.status))
+  File "/usr/local/lib/python2.7/wsgiref/handlers.py", line 389, in _write
+    self.stdout.write(data)
+  File "/usr/local/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/local/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/local/lib/python2.7/SocketServer.py", line 641, in __init__
+    self.finish()
+  File "/usr/local/lib/python2.7/SocketServer.py", line 694, in finish
+    self.wfile.flush()
+  File "/usr/local/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[28/Feb/2014 01:21:19] "GET / HTTP/1.1" 200 202
+[28/Feb/2014 01:21:28] "GET / HTTP/1.1" 200 5095
+[28/Feb/2014 01:21:28] "GET /static/rest_framework/js/jquery-1.8.1-min.js HTTP/1.1" 200 92791
+[28/Feb/2014 01:21:29] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 25688
+[28/Feb/2014 01:21:44] "GET / HTTP/1.1" 200 202
+[28/Feb/2014 01:22:42] "GET / HTTP/1.1" 200 202
+[28/Feb/2014 01:22:53] "GET / HTTP/1.1" 200 5095
+[28/Feb/2014 01:22:53] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[28/Feb/2014 01:22:53] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 2764
+[28/Feb/2014 01:22:53] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 25688
+[28/Feb/2014 01:22:53] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1043
+[28/Feb/2014 01:22:53] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 118028
+[28/Feb/2014 01:22:54] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1580
+[28/Feb/2014 01:22:54] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[28/Feb/2014 01:22:55] "GET /static/rest_framework/js/jquery-1.8.1-min.js HTTP/1.1" 200 92791
+[28/Feb/2014 01:22:55] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[28/Feb/2014 01:23:02] "GET /videos/ HTTP/1.1" 200 4842
+[28/Feb/2014 01:23:05] "GET / HTTP/1.1" 200 5095
+[28/Feb/2014 03:16:48] "GET / HTTP/1.1" 200 202
+[28/Feb/2014 03:17:20] "GET / HTTP/1.1" 200 5095
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 2764
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1043
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 25688
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 118028
+[28/Feb/2014 03:17:20] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1580
+[28/Feb/2014 03:17:21] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[28/Feb/2014 03:17:21] "GET /static/rest_framework/js/jquery-1.8.1-min.js HTTP/1.1" 200 92791
+[28/Feb/2014 03:17:31] "GET / HTTP/1.1" 200 5095
+[28/Feb/2014 03:17:46] "GET / HTTP/1.1" 200 5095
+[28/Feb/2014 03:17:50] "GET /?format=json HTTP/1.1" 200 202
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/SocketServer.py", line 582, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/local/lib/python2.7/SocketServer.py", line 639, in __init__
+    self.handle()
+  File "/usr/local/lib/python2.7/wsgiref/simple_server.py", line 116, in handle
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/local/lib/python2.7/socket.py", line 447, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+[28/Feb/2014 20:41:51] "GET / HTTP/1.0" 200 230
+[28/Feb/2014 22:33:07] "GET /manager/html HTTP/1.1" 404 5568

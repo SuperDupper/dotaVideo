@@ -1,0 +1,11 @@
+/usr/local/lib/python2.7/site-packages/setuptools-2.2-py2.7.egg/pkg_resources.py:991: UserWarning: /home/wenquan/.python-eggs is writable by group/others and vulnerable to attack when used with get_resource_filename. Consider a more secure location (set with .set_extraction_path or the PYTHON_EGG_CACHE environment variable).
+
+/usr/local/lib/python2.7/site-packages/setuptools-2.2-py2.7.egg/pkg_resources.py:991: UserWarning: /home/wenquan/.python-eggs is writable by group/others and vulnerable to attack when used with get_resource_filename. Consider a more secure location (set with .set_extraction_path or the PYTHON_EGG_CACHE environment variable).
+
+Validating models...
+
+0 errors found
+February 27, 2014 - 16:50:17
+Django version 1.6.2, using settings 'webserver.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
